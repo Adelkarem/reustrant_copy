@@ -3,6 +3,10 @@ import Card from "./Card"; // Make sure to adjust the path according to your pro
 import 'animate.css';
 import dislike from '../assets/images/dislike.png';
 import like from '../assets/images/like.png';
+import dish11 from '../assets/images/dish1.png';
+import dish22 from '../assets/images/dish2.png';
+import dish33 from '../assets/images/dish3.png';
+import dish44 from '../assets/images/dish4.png';
 
 
 function Home() {
@@ -12,39 +16,39 @@ function Home() {
   const cardData = [
     {
       id: 0,
-      image: "/src/assets/images/dish1.png",
+      image: dish11,
       title: "4.5",
       description: "Chef ADEL",
       pargr: "Designer takes on a chef, after marrying a long-awaited South Mountain girl.",
-      icon: {like},
-      icon1: {dislike},
+      icon: like,
+      icon1: dislike,
     },
     {
       id: 1,
-      image: "/src/assets/images/dish2.png",
+      image: dish22,
       title: "4.6",
       description: "Chef SELIM",
       pargr: "You are always the most beautiful, especially your cooking, ahayy eventhe red rag.",
-      icon: {like},
-      icon1: {dislike},
+      icon: like,
+      icon1: dislike,
     },
     {
       id: 2,
-      image: "/src/assets/images/dish3.png",
+      image: dish33,
       title: "4.9",
       description: "Chef NAGY",
       pargr: "How come my supervising lecturer is sour, yo rek, mosok ket wingi rateko teko, on the",
-      icon: {like},
-      icon1: {dislike},
+      icon: like,
+      icon1: dislike,
     },
     {
       id: 3,
-      image: "/src/assets/images/dish4.png",
+      image: dish44,
       title: "4.8",
       description: "Chef LAILA",
       pargr: "With the neng mabar yuk finally Adin succeeded in becoming the boss of Mas",
-      icon: {like},
-      icon1: {dislike},
+      icon: like,
+      icon1: dislike,
     },
   ];
 
@@ -75,8 +79,8 @@ function Home() {
       ">
   <img
    
-    src={cardData[selectedCardIndex].image}
-    alt={`Dish ${cardData[selectedCardIndex].id}`}
+   src={cardData[selectedCardIndex].image}
+   alt={`Dish ${cardData[selectedCardIndex].id}`}
   />
 </div>
 
