@@ -1,0 +1,56 @@
+/* Include base styles from Tailwind CSS */
+@tailwind base;
+
+/* Include components styles from Tailwind CSS */
+@tailwind components;
+
+/* Include utility classes from Tailwind CSS */
+@tailwind utilities;
+
+/* Custom styling for the .container class within a specific layer */
+@layer {
+  .container {
+    /* Apply 30 pixels of horizontal padding on the .container class */
+    @apply px-[25px] mx-auto;
+  }
+}
+
+body {
+  background-image: url(/src/assets/images/disss.jpg);
+
+
+  background-size: cover;
+}
+
+/* Custom animation duration */
+.main-image {
+  animation-duration: 1.6s; /* Adjust the duration as needed */
+}
+
+
+
+
+
+
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .midel-text {
+      display: none;
+  }
+}
+
+
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .cards {
+    height: auto;
+    
+  }
+}
+
