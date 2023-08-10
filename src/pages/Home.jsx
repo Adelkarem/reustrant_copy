@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Card from "./Card"; // Make sure to adjust the path according to your project structure
 import 'animate.css';
+import dislike from '../assets/images/dislike.png';
+import like from '../assets/images/like.png';
+
 
 function Home() {
 
@@ -13,8 +16,8 @@ function Home() {
       title: "4.5",
       description: "Chef ADEL",
       pargr: "Designer takes on a chef, after marrying a long-awaited South Mountain girl.",
-      icon: "/src/assets/images/like.png",
-      icon1: "/src/assets/images/dislike.png",
+      icon: {like},
+      icon1: {dislike},
     },
     {
       id: 1,
@@ -22,8 +25,8 @@ function Home() {
       title: "4.6",
       description: "Chef SELIM",
       pargr: "You are always the most beautiful, especially your cooking, ahayy eventhe red rag.",
-      icon: "/src/assets/images/like.png",
-      icon1: "/src/assets/images/dislike.png",
+      icon: {like},
+      icon1: {dislike},
     },
     {
       id: 2,
@@ -31,8 +34,8 @@ function Home() {
       title: "4.9",
       description: "Chef NAGY",
       pargr: "How come my supervising lecturer is sour, yo rek, mosok ket wingi rateko teko, on the",
-      icon: "/src/assets/images/like.png",
-      icon1: "/src/assets/images/dislike.png",
+      icon: {like},
+      icon1: {dislike},
     },
     {
       id: 3,
@@ -40,8 +43,8 @@ function Home() {
       title: "4.8",
       description: "Chef LAILA",
       pargr: "With the neng mabar yuk finally Adin succeeded in becoming the boss of Mas",
-      icon: "/src/assets/images/like.png",
-      icon1: "/src/assets/images/dislike.png",
+      icon: {like},
+      icon1: {dislike},
     },
   ];
 
@@ -128,9 +131,9 @@ function Home() {
             <p>{cardData[selectedCardIndex].pargr}</p>
           </div>
 
-          <div className="flex pl-5 pt-2 gap-4">
-            <img src={cardData[selectedCardIndex].icon} alt="icon" />
-            <img src={cardData[selectedCardIndex].icon1} alt="icon" />
+          <div className="flex pl-5 pt-2 gap-3">
+            <img src={dislike} alt="icon" />
+            <img src={like} alt="icon" />
           </div>
         </div>
       </div>
