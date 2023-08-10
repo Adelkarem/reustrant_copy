@@ -10,7 +10,7 @@ const Card = ({ data, onClick, isSelected }) => {
       onClick={onClick}
     >
       {/* Image */}
-      <img className="w-[100px] items-center m-auto  max-w-full" src={data.image} alt={`Dish ${data.id}`} />
+      <img className="w-[100px] items-center m-auto  max-w-full cursor-pointer" src={data.image} alt={`Dish ${data.id}`} />
     </div>
   );
 };
