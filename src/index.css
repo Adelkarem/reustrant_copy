@@ -17,22 +17,16 @@
 
 body {
   background-image: url(/src/assets/images/disss.jpg);
-height: auto;
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 /* Custom animation duration */
 .main-image {
   animation-duration: 1.6s; /* Adjust the duration as needed */
 }
-
-
-
-
-
-
-
 
 
 /* Media query for small screens */
